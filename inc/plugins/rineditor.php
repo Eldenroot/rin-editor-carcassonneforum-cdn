@@ -707,9 +707,9 @@ function rineditor_inserter_quick($smilies = true)
 
 	$rin_js_files = $quickquote = $quickquotesty = $sourcemode = $rin_height = $rin_rmvbut = $rin_extbut = $rin_extbutd = $rin_imgur = $rin_autosave = $rinlang = $rinscsmiley = $rin_vbquote = $black_text = $content_skin = "";
 
-	$rin_js_files = "<script type=\"text/javascript\" src=\"https://cdn.jsdelivr.net/gh/martec/Rin-Editor@1.2.1/jscripts/rin/editor/rineditor.js\"></script>
-<script type=\"text/javascript\" src=\"https://cdn.jsdelivr.net/gh/martec/Rin-Editor@1.2.1/jscripts/rin/editor/ckeditor.js\"></script>
-<script type=\"text/javascript\" src=\"https://cdn.jsdelivr.net/gh/martec/Rin-Editor@1.2.1/jscripts/rin/editor/adapters/jquery.js\"></script>";
+	$rin_js_files = "<script type=\"text/javascript\" src=\"https://cdn.jsdelivr.net/gh/Eldenroot/rin-editor-carcassonneforum-cdn/jscripts/rin/editor/rineditor.js\"></script>
+<script type=\"text/javascript\" src=\"https://cdn.jsdelivr.net/gh/Eldenroot/rin-editor-carcassonneforum-cdn/jscripts/rin/editor/ckeditor.js\"></script>
+<script type=\"text/javascript\" src=\"https://cdn.jsdelivr.net/gh/Eldenroot/rin-editor-carcassonneforum-cdn/jscripts/rin/editor/adapters/jquery.js\"></script>";
 
 	if(strpos($templatelist,'showthread_quickreply') || strpos($templatelist,'private_quickreply')) {
 		$rin_height = $mybb->settings['rineditor_height_other'];
@@ -730,8 +730,8 @@ function rineditor_inserter_quick($smilies = true)
 	}
 
 	if($mybb->settings['rineditor_quickquote'] == 1 && strpos($templatelist,'showthread_quickreply')) {
-		$quickquote = "<script type=\"text/javascript\" src=\"https://cdn.jsdelivr.net/gh/martec/Rin-Editor@1.2.1/jscripts/rin/editor/adapters/thread.quickquote.js\"></script>";
-		$quickquotesty = "<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/martec/Rin-Editor/jscripts/rin/editor/quickquote.min.css\" type=\"text/css\" />";
+		$quickquote = "<script type=\"text/javascript\" src=\"https://cdn.jsdelivr.net/gh/Eldenroot/rin-editor-carcassonneforum-cdn/jscripts/rin/editor/adapters/thread.quickquote.js\"></script>";
+		$quickquotesty = "<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/Eldenroot/rin-editor-carcassonneforum-cdn/Rin-Editor/jscripts/rin/editor/quickquote.min.css\" type=\"text/css\" />";
 	}
 
 	if($mybb->user['sourceeditor'] == 1)
@@ -750,7 +750,7 @@ function rineditor_inserter_quick($smilies = true)
 		$rin_vbquote = 0;
 	}
 
-	$content_skin = "https://cdn.jsdelivr.net/gh/martec/Rin-Editor/jscripts/rin/editor/contents.min.css";
+	$content_skin = "https://cdn.jsdelivr.net/gh/Eldenroot/rin-editor-carcassonneforum-cdn/jscripts/rin/editor/contents.min.css";
 	if(substr($theme['editortheme'], 0, 4) === "rin-") {
 		$rin_style = substr($theme['editortheme'], 0, -4);
 	}
@@ -769,7 +769,7 @@ textarea.cke_source {
 	background-color: #222222 !important;
 }
 </style>";
-		$content_skin = "https://cdn.jsdelivr.net/gh/martec/Rin-Editor/jscripts/rin/editor/contents_black.min.css";
+		$content_skin = "https://cdn.jsdelivr.net/gh/Eldenroot/rin-editor-carcassonneforum-cdn/jscripts/rin/editor/contents_black.min.css";
 	}
 	else {
 		$rin_style = 'rin-moonocolor';
