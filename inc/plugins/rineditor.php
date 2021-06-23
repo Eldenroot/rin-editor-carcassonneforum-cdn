@@ -730,7 +730,7 @@ function rineditor_inserter_quick($smilies = true)
 	}
 
 	if($mybb->settings['rineditor_quickquote'] == 1 && strpos($templatelist,'showthread_quickreply')) {
-		$quickquote = "<script type=\"text/javascript\" src=\"https://cdn.jsdelivr.net/gh/Eldenroot/rin-editor-carcassonneforum-cdn/jscripts/rin/editor/adapters/thread.quickquote.js\"></script>";
+		$quickquote = "<script type=\"text/javascript\" src=\"https://cdn.jsdelivr.net/gh/Eldenroot/rin-editor-carcassonneforum-cdn/jscripts/rin/editor/thread.quickquote.js\"></script>";
 		$quickquotesty = "<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/Eldenroot/rin-editor-carcassonneforum-cdn/jscripts/rin/editor/quickquote.min.css\" type=\"text/css\" />";
 	}
 
