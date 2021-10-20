@@ -1,3 +1,6 @@
+THIS IS A MODIFIED VERSION OF RIN EDITOR - DO NOT USE :)
+
+
 Rin Editor: WYSIWYG Editor for Mybb (Powerd by CKEditor)
 =================
 
